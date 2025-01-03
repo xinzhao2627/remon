@@ -189,15 +189,15 @@ function JMTemplate ({subUrl, btnLabel, type, field})  {
                 headers : {'Content-Type': 'application/json'},
                 body : JSON.stringify(configDict)
             }
-            res  = await fetch(`https://remonjp-api.vercel.app/api/${n}`, options)
+            res  = await fetch(`https://remonapi.vercel.app/api/${n}`, options)
             isValid=true
         }
         else if (type === 'quiz' && quizFreq >= 1 && quizFreq <= 20 && quizCount >= 1){
-            res  = await fetch(`https://remonjp-api.vercel.app/api/${n}/${field}/${quizFreq}/${quizCount}`)
+            res  = await fetch(`https://remonapi.vercel.app/api/${n}/${field}/${quizFreq}/${quizCount}`)
             isValid=true
         }
         else if (type === 'random'){
-            res  = await fetch(`https://remonjp-api.vercel.app/api/${n}`)
+            res  = await fetch(`https://remonapi.vercel.app/api/${n}`)
             isValid=true
         } 
 
