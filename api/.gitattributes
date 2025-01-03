@@ -1,0 +1,2 @@
+rdict.db filter=lfs diff=lfs merge=lfs -text
+database.sql filter=lfs diff=lfs merge=lfs -text

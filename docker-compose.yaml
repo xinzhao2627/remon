@@ -1,0 +1,27 @@
+services:
+  api:
+    build: ./api
+    # image: rainn26/myapi:api
+    container_name: api_c
+    ports:
+      - '4000:4000'
+    volumes:
+      - ./api:/api
+      - /api/node_modules
+  reactapp:
+    build: ./frontend
+    # image: rainn26/myapi:reactapp
+    container_name: reactapp_c
+    ports:
+      - '3000:3000'
+    stdin_open: true
+    tty: true
+    environment:
+      - WDS_SOCKET_HOST=127.0.0.1 
+      - CHOKIDAR_USEPOLLING=true
+      - WATCHPACK_POLLING=true
+    volumes:
+      - ./frontend:/frontend
+      - /frontend/node_modules
+
+

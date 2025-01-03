@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  text-align: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+.sentence {
+  min-width: 80%;
+  font-size: xxx-large;
+}
+.segment {
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+.segment:hover{
+  color: #3AA6B9;
+}
+.segment-container {
+  position: relative;
+  display: inline-block;
+  vertical-align: baseline; /* Ensure inline-block elements align correctly */
+}
+.readings {
+  display: block;
+  /* font-size: 0.75em; */
+  top: -1.2em; /* Adjust this value to position the furigana correctly */
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-style: italic;
+  /* font-size: 20px; */
+}
+.jlpt {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.jlpt-5 {
+  width: fit-content;
+  background-color: #49a777;
+  color: #f7fdfe;
+}
+.jlpt-4 {
+  width: fit-content;
+  background-color: #EE8434;
+  color: #f7fdfe;
+}
+.jlpt-3 {
+  width: fit-content;
+  background-color: #d53d42;
+  color: #f7fdfe;
+}
+.jlpt-2 {
+  width: fit-content;
+  background-color: #8f64e3;
+  color: #f7fdfe;
+}
+.jlpt-1 {
+  width: fit-content;
+  background-color: #114b5f;
+  color: #f7fdfe;
+}
+
+.jlpt-unknown {
+  width: fit-content;
+  background-color: #011836;
+  color: #f7fdfe;
+}
+.mm{
+  border: 1px solid #9b9898;
+  margin-right: 4px;
+  position: relative;
+}
+
+.ent {
+  font-family: 'Roboto', sans-serif;
+}
+.jent {
+  font-family: 'Noto Sans JP', sans-serif;  
+  font-weight: 900;
+}
+
+.sym{
+  vertical-align: bottom;
+}
+.smb {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: transparent;
+  text-align: left;
+  margin: 0;
+  padding: 16px;
+  font-family: sans-serif;
+  font-size: 20px;
+  transition: all 0.2s, color 0.2s;
+  cursor: pointer;
+}
+
+.smb:hover {
+  background-color: #EEEEEE;
+  color: #00796b;
+}
+
+.icb {
+  margin-right: 12px;
+  color: #00796b;
+}
+
+.menu-text {
+  flex-grow: 1;
+}
+.sma{
+  transition: background-color 0.2s, color 0.2s;
+  align-items: center;
+  background-color: transparent;
+  text-align: left;
+  font-size: 16px;
+  transition: all 0.2s, color 0.2s;
+  cursor: pointer;
+}
+
+.p{
+  margin-bottom: 0;
+}
+.sma:hover{
+  background-color: #EEEEEE;
+  color: #00796b;
+
+}
+.cl1 {
+  left: 98% !important; 
+}
+
+.cl2 {
+  left: 73% !important; 
+}
+.cl3 {
+  left: 48% !important; 
+}
+.cl4 {
+  left: 23% !important; 
+}
+
+.cl5 {
+  left: -2% !important; 
+}
+
+.cl1, .cl2, .cl3, .cl4, .cl5 {
+  font-size: medium;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+}
+
+.quiz {
+  text-align: center;
+  /* transition: all 0.3s ease-in-out; */
+}
+
+.dd-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.dd-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.dd-exit {
+  opacity: 1;
+}
+.dd-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+.brand {
+  margin-right: 5em;
+}
+.brand-h{
+  transition: all 0.3s ease-in-out;
+}
+.brand-h:hover {
+  color: #4FD1C5;
+}
+.nvp {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: medium;
+  letter-spacing: 0.3px;
+  font-weight: 500;
+}
+.nvp:hover{
+  color: #66b2b2;
+  background-color: transparent !important;
+}
+.a-panel {
+  position: absolute;
+  z-index: 3;
+}
+.nvz {
+  z-index: 2;
+}
+
+@media (max-width:768px) {
+  .a-panel{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+  }
+}
+
+.hmb{
+  
+  letter-spacing: 0.7px;
+  font-family: 'Roboto',sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.hmt {
+  font-family: 'Noto Sans JP', sans-serif;
+}
