@@ -513,7 +513,7 @@ function JMTemplate({ subUrl, btnLabel, type, field }) {
 							</Text>
 							{showStuckWarning && (
 								<Text
-									color={"black"}
+									color={"#1E93AB"}
 									fontFamily={"courier new"}
 									fontWeight={600}
 								>
